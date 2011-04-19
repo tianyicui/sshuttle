@@ -90,6 +90,11 @@ entire subnet to the VPN.
     `0/0 -x 1.2.3.0/24` to forward everything except the
     local subnet over the VPN, for example.
 
+-X, --exclude-from=*file*
+:   exclude the subnets specified in a file, one subnet per
+    line. Useful when you have lots of subnets to exclude
+    (e.g. all IPs within a particular country).
+
 -v, --verbose
 :   print more information about the session.  This option
     can be used more than once for increased verbosity.  By
